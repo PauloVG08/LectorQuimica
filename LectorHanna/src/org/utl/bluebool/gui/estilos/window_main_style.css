@@ -1,0 +1,109 @@
+.buttons {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 1;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover{
+    -fx-background-color: rgba(224, 224, 224, .3);
+    -fx-text-fill: white;
+    -fx-translate-y: 1;
+    -fx-font-size: 13px;
+}
+
+.cmb {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 1;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.cmb:hover {
+    -fx-translate-y: 1;
+}
+
+.button_add {
+    -fx-background-color: #9FC247;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 1;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button_add:hover{
+    -fx-background-color: rgb(137, 168, 56);
+    -fx-text-fill: white;
+    -fx-translate-y: -.5;
+}
+
+.button_stop {
+    -fx-background-color: #D75D47;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 1;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button_stop:hover{
+    -fx-background-color: rgb(221, 78, 54);
+    -fx-text-fill: white;
+    -fx-translate-y: -.5;
+}
+
+.button_clean{
+    -fx-background-color: #72A5C0;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 1;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button_clean:hover{
+    -fx-background-color: rgb(76, 136, 169);
+    -fx-text-fill: white;
+    -fx-translate-y: -.5;
+}
+
+.button_r_001, .button_r_01, .button_r_1 {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 1;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button_r_001:hover {
+    -fx-background-color: #B6AA91;
+    -fx-font-weight: 700;
+    -fx-text-fill: #444;
+}
+
+.button_r_01:hover {
+    -fx-background-color: #D5C986;
+    -fx-font-weight: 700;
+    -fx-text-fill: #444;
+}
+
+.button_r_1:hover {
+    -fx-background-color: #9FAE84;
+    -fx-font-weight: 700;
+    -fx-text-fill: #444;
+}
+
+.slider {
+    
+}

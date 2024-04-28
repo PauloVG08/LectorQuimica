@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" stylesheets="@estilos/window_main_style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <ScrollPane fitToHeight="true" fitToWidth="true" hmax="600.0" pannable="true" vbarPolicy="ALWAYS" vmax="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <content>
+                        <AnchorPane>
+                            <children>
+                                <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="ALWAYS" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Gauge fx:id="gaugeTemp" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                                        <LineChart fx:id="chartTemp" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0">
+                                            <xAxis>
+                                                <CategoryAxis fx:id="ejeXTemp" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis fx:id="ejeYTemp" />
+                                            </yAxis>
+                                        </LineChart>
+                                        <Gauge fx:id="gaugePH" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+                                        <LineChart fx:id="chartPh" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                                            <xAxis>
+                                                <CategoryAxis fx:id="ejeXPh" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis fx:id="ejeYPh" />
+                                            </yAxis>
+                                        </LineChart>
+                                        <Gauge fx:id="gaugeCond" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                        <LineChart fx:id="chartCond" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                                            <xAxis>
+                                                <CategoryAxis fx:id="ejeXCond" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis fx:id="ejeYCond" />
+                                            </yAxis>
+                                        </LineChart>
+                                    </children>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: #25252D;" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" top="5.0" />
+            </padding>
+            <children>
+                <VBox alignment="TOP_CENTER" layoutY="5.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <GridPane fx:id="PaneCOM" alignment="CENTER" hgap="5.0" prefHeight="150.0" prefWidth="280.0" vgap="5.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="161.20001220703125" minWidth="10.0" prefWidth="138.1999755859375" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="136.60002441406252" minWidth="10.0" prefWidth="136.60002441406252" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="42.599996948242186" minHeight="10.0" prefHeight="28.20000305175781" valignment="BOTTOM" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="74.5999969482422" minHeight="10.0" prefHeight="32.2" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="75.39999999999999" minHeight="10.0" prefHeight="75.39999999999999" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="lblPuertoCOM" contentDisplay="CENTER" lineSpacing="1.0" text="Puerto COM" textFill="WHITE" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ComboBox fx:id="cmbPuertos" prefHeight="30.0" prefWidth="166.0" promptText="Seleccionar" styleClass="cmb" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" />
+                                    </GridPane.margin>
+                                </ComboBox>
+                                <Button fx:id="btnActualizarPuertos" mnemonicParsing="false" prefHeight="32.0" styleClass="buttons" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets right="25.0" />
+                                    </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@estilos/refresh.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                              </ImageView>
+                           </graphic>
+                                </Button>
+                                <Button fx:id="btnConectar" mnemonicParsing="false" prefHeight="32.0" prefWidth="156.0" styleClass="buttons" text="CONECTAR" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" right="10.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <Button fx:id="btnDesonectar" mnemonicParsing="false" prefHeight="32.0" prefWidth="156.0" styleClass="buttons" text="DESCONECTAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" right="10.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <Line endX="100.0" startX="-160.0" stroke="#5c5c70" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                            </children>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </GridPane>
+                        <VBox alignment="CENTER" prefHeight="94.0" prefWidth="282.0">
+                            <children>
+                                <Label text="Resolución de pH" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ToolBar prefHeight="40.0" prefWidth="205.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                                    <items>
+                                        <Button fx:id="btnPhRes00" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" styleClass="button_r_001" text="0.001" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="btnPhRes01" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" styleClass="button_r_01" text="0.01" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="btnPhRes02" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" styleClass="button_r_1" text="0.1" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </items>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="40.0" right="5.0" top="10.0" />
+                                    </VBox.margin>
+                                </ToolBar>
+                                <Line endX="100.0" startX="-160.0" stroke="#5c5c70">
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </Line>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <GridPane alignment="TOP_CENTER" hgap="10.0" vgap="10.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                            <children>
+                                <Label alignment="TOP_CENTER" prefHeight="51.0" prefWidth="282.0" text="Frecuencia de lectura en segundos" textFill="WHITE" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </padding>
+                                </Label>
+                                <Slider fx:id="txtSlider" blockIncrement="1.0" majorTickUnit="15.0" max="60.0" min="1.0" minorTickCount="5" scaleX="1.1" showTickLabels="true" showTickMarks="true" translateX="10.0" value="1.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" />
+                                    </GridPane.margin>
+                                    <styleClass>
+                                        <String fx:value="slider" />
+                                        <String fx:value="track" />
+                                    </styleClass>
+                                </Slider>
+                                <TextField fx:id="txtFrecuencia" alignment="CENTER_RIGHT" maxHeight="32.0" prefHeight="32.0" prefWidth="64.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Consolas" size="16.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets left="15.0" right="15.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <Line endX="100.0" startX="-160.0" stroke="#5c5c70" translateY="20.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                    <GridPane.margin>
+                                        <Insets top="10.0" />
+                                    </GridPane.margin>
+                                </Line>
+                            </children>
+                        </GridPane>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                            <VBox.margin>
+                                <Insets left="10.0" right="10.0" top="100.0" />
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="btnIniciar" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" styleClass="button_add" text="INICIAR" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="btnDetener" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" styleClass="button_stop" text="DETENER" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="btnLimpiar" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" styleClass="button_clean" text="LIMPIAR" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Button fx:id="btnPrueba" mnemonicParsing="false" styleClass="buttons" text="Prueba de charts" />
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnAcercaDe" maxHeight="1.7976931348623157E308" mnemonicParsing="false" styleClass="buttons" text="Acerca de Lector Hanna">
+                           <HBox.margin>
+                              <Insets bottom="4.0" top="4.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
